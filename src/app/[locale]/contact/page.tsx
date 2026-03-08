@@ -12,13 +12,13 @@ export default function ContactPage() {
     {
       icon: <Phone className="w-6 h-6 text-primary" />,
       label: t("phone_label"),
-      value: "+90 850 123 45 67",
+      value: "0537 050 87 12 / 0536 926 50 03",
       bg: "bg-primary/10"
     },
     {
       icon: <Mail className="w-6 h-6 text-gold-500" />,
       label: t("email_label"),
-      value: "info@demirhannakliyat.com",
+      value: "demirhannakliyat20@hotmail.com",
       bg: "bg-gold-500/10"
     },
     {

@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "Hero": {
+    "title": "Türkiye'nin İlk ve Tek Noter Onaylı Nakliye Firması",
+    "subtitle": "Eşyalarınız Demirhan güvencesi ile sigortalı ve noter tasdikli olarak taşınır. Size sadece yeniliğin keyfini çıkarmak kalır.",
+    "cta": "Hızlı Teklif Al"
+  }
+}

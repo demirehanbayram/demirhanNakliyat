@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Turkey's First and Only Notary Approved Moving Company",
+    "subtitle": "Your belongings are transported under Demirhan assurance, insured and notarized. You just need to enjoy the renewal.",
+    "cta": "Get a Fast Quote"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "Hero": {
+    "title": "Die erste und einzige notariell beglaubigte Umzugsfirma der Türkei",
+    "subtitle": "Ihr Hab und Gut wird unter der Demirhan-Garantie, versichert und notariell beglaubigt transportiert. Sie müssen nur noch die Erneuerung genießen.",
+    "cta": "Schnelles Angebot einholen"
+  }
+}

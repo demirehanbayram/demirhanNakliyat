@@ -81,35 +81,35 @@
       "f5_desc": "Kaliteli hizmeti ulaşılabilir fiyatlarla sunarak müşterilerimizin memnuniyetini ön planda tutuyoruz.",
       "f6_title": "Müşteri Memnuniyeti Odaklı Hizmet",
       "f6_desc": "Taşınma sürecinin her aşamasında müşterilerimizin memnuniyeti bizim için en önemli önceliktir."
-    },
-    "Footer": {
-      "desc": "Türkiye'nin ilk ve tek noter onaylı nakliyat firması. Eşyalarınız bizimle güvende.",
-      "links_title": "Hızlı Erişim",
-      "contact_title": "İletişim",
-      "trust_title": "Güvence",
-      "notary_seal": "%100 Noter Onaylı Taşımacılık Belgesi",
-      "rights": "Demirhan Nakliyat. Tüm hakları saklıdır.",
-      "privacy": "Gizlilik Politikası",
-      "terms": "Kullanım Şartları",
-      "tel": "Tel: 0537 050 87 12 / 0536 926 50 03",
-      "email": "demirhannakliyat20@hotmail.com",
-      "address": "İstanbul, Türkiye"
-    },
-    "Contact": {
-      "title": "İletişim",
-      "subtitle": "Tüm taşınma süreçleriniz ve sorularınız için bize hemen ulaşın.",
-      "office_title": "Demirhan Nakliyat Merkez Ofisi",
-      "phone_label": "Telefon",
-      "email_label": "E-posta",
-      "address_label": "Adres",
-      "address_val": "Kadıköy, İstanbul / Türkiye",
-      "form_title": "Hızlı Mesaj Gönderin",
-      "form_name": "Adınız",
-      "form_email": "E-posta Adresiniz",
-      "form_phone": "Telefon Numaranız",
-      "form_message": "Mesajınız",
-      "form_submit": "Mesajı Gönder",
-      "success_msg": "Mesajınız alındı, en kısa sürede döneceğiz."
     }
+  },
+  "Footer": {
+    "desc": "Türkiye'nin ilk ve tek noter onaylı nakliyat firması. Eşyalarınız bizimle güvende.",
+    "links_title": "Hızlı Erişim",
+    "contact_title": "İletişim",
+    "trust_title": "Güvence",
+    "notary_seal": "%100 Noter Onaylı Taşımacılık Belgesi",
+    "rights": "Demirhan Nakliyat. Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "tel": "Tel: 0537 050 87 12 / 0536 926 50 03",
+    "email": "demirhannakliyat20@hotmail.com",
+    "address": "İstanbul, Türkiye"
+  },
+  "Contact": {
+    "title": "İletişim",
+    "subtitle": "Tüm taşınma süreçleriniz ve sorularınız için bize hemen ulaşın.",
+    "office_title": "Demirhan Nakliyat Merkez Ofisi",
+    "phone_label": "Telefon",
+    "email_label": "E-posta",
+    "address_label": "Adres",
+    "address_val": "Kadıköy, İstanbul / Türkiye",
+    "form_title": "Hızlı Mesaj Gönderin",
+    "form_name": "Adınız",
+    "form_email": "E-posta Adresiniz",
+    "form_phone": "Telefon Numaranız",
+    "form_message": "Mesajınız",
+    "form_submit": "Mesajı Gönder",
+    "success_msg": "Mesajınız alındı, en kısa sürede döneceğiz."
   }
 }

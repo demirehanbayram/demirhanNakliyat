@@ -9,6 +9,7 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
+import Analytics from '@/components/Analytics';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -21,8 +22,47 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Demirhan Nakliyat - Türkiye'nin Tek Noter Onaylı Firması",
-  description: 'Sigortalı, güvenli ve noter onaylı nakliyat hizmetleri.',
+  title: {
+    default: "Demirhan Nakliyat - Türkiye'nin Tek Noter Onaylı Nakliye Firması",
+    template: "%s | Demirhan Nakliyat"
+  },
+  description: "Demirhan Nakliyat ile Türkiye çapında sigortalı, güvenli ve noter onaylı evden eve nakliyat, ofis taşıma ve depolama hizmetleri. Hemen ücretsiz teklif alın!",
+  keywords: ["nakliyat", "evden eve nakliyat", "noter onaylı nakliyat", "şehirler arası nakliyat", "ofis taşıma", "eşya depolama", "demirhan nakliyat"],
+  authors: [{ name: "Demirhan Nakliyat" }],
+  creator: "Demirhan Nakliyat",
+  publisher: "Demirhan Nakliyat",
+  formatDetection: {
+    email: false,
+    address: true,
+    telephone: true,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'tr_TR',
+    url: 'https://demirhannakliyat.com.tr',
+    siteName: 'Demirhan Nakliyat',
+    title: "Demirhan Nakliyat - Güvenli ve Noter Onaylı Taşımacılık",
+    description: "Türkiye'nin ilk ve tek noter onaylı nakliye firması. Sigortalı taşımacılıkta lider marka.",
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Demirhan Nakliyat Logo',
+      },
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default async function RootLayout({
@@ -57,6 +97,7 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <div className="flex min-h-screen flex-col">
+              <Analytics />
               <Header />
               <main className="flex-1">{children}</main>
               <WhatsAppButton />

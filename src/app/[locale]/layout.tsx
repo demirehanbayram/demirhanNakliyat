@@ -8,6 +8,7 @@ import { routing, Locale } from '@/i18n/routing';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -58,6 +59,7 @@ export default async function RootLayout({
             <div className="flex min-h-screen flex-col">
               <Header />
               <main className="flex-1">{children}</main>
+              <WhatsAppButton />
               <Footer />
             </div>
           </ThemeProvider>

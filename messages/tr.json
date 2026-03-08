@@ -94,7 +94,8 @@
     "terms": "Kullanım Şartları",
     "tel": "Tel: 0537 050 87 12 / 0536 926 50 03",
     "email": "demirhannakliyat20@hotmail.com",
-    "address": "İstanbul, Türkiye"
+    "address": "Denizli, Türkiye",
+    "whatsapp": "WhatsApp Destek"
   },
   "Contact": {
     "title": "İletişim",
@@ -103,7 +104,7 @@
     "phone_label": "Telefon",
     "email_label": "E-posta",
     "address_label": "Adres",
-    "address_val": "Kadıköy, İstanbul / Türkiye",
+    "address_val": "Pamukkale, Denizli / Türkiye",
     "form_title": "Hızlı Mesaj Gönderin",
     "form_name": "Adınız",
     "form_email": "E-posta Adresiniz",

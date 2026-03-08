@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin, Package, Phone, CheckCircle2, Loader2 } from "lucide-react";
+import { MapPin, Package, Phone, CheckCircle2, Loader2, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
@@ -12,39 +12,52 @@ interface QuoteFormProps {
 export function QuoteForm({ cities }: QuoteFormProps) {
   const tQuote = useTranslations("Quote");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [formData, setFormData] = useState({
+    from: "",
+    to: "",
+    rooms: "1+1",
+    phone: ""
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSuccess(true);
-  };
 
-  if (isSuccess) {
-    return (
-      <div className="bg-background rounded-2xl p-8 border border-primary/20 shadow-xl text-center space-y-4 animate-in fade-in zoom-in duration-300">
-        <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-          <CheckCircle2 className="w-10 h-10 text-primary" />
-        </div>
-        <h3 className="text-xl font-bold text-foreground">Teklif Talebiniz Alındı!</h3>
-        <p className="text-muted-foreground text-sm">
-          Müşteri temsilcilerimiz en kısa sürede (ortalama 15 dakika içinde) belirttiğiniz telefon numarasından size ulaşacaktır.
-        </p>
-        <Button 
-          variant="outline" 
-          onClick={() => setIsSuccess(false)}
-          className="rounded-xl"
-        >
-          Yeni Teklif Al
-        </Button>
-      </div>
-    );
-  }
+    const whatsappNumber = "905370508712"; // Primary contact number
+    const emailAddress = "demirhannakliyat20@hotmail.com";
+
+    const message = `*Yeni Teklif Talebi*\n\n` +
+      `📍 *Nereden:* ${formData.from}\n` +
+      `🏁 *Nereye:* ${formData.to}\n` +
+      `📦 *Oda Sayısı:* ${formData.rooms}\n` +
+      `📞 *Telefon:* ${formData.phone}\n\n` +
+      `_Demirhan Nakliyat Web Sitesi üzerinden gönderildi._`;
+
+    // 1. WhatsApp Redirect
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // 2. Email Client Open (mailto)
+    const emailSubject = encodeURIComponent("Yeni Nakliye Teklif Talebi");
+    const emailBody = encodeURIComponent(message.replace(/\*/g, "")); // Strip asterisks for email
+    const mailtoUrl = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
+
+    // Small delay for UI feel
+    await new Promise(resolve => setTimeout(resolve, 800));
+
+    // Choose primary method (WhatsApp is usually better for instant lead response)
+    // We will open WhatsApp and also provide a simple fallback or secondary action if needed.
+    window.open(whatsappUrl, '_blank');
+    
+    // Optionally also open email after a short delay or if WhatsApp fails
+    // window.location.href = mailtoUrl;
+
+    setIsSubmitting(false);
+  };
 
   return (
     <form onSubmit={handleSubmit} className="bg-background rounded-2xl p-6 border border-border/60 shadow-sm space-y-4">
@@ -52,8 +65,14 @@ export function QuoteForm({ cities }: QuoteFormProps) {
         <label className="text-sm font-medium text-foreground flex items-center gap-2">
           <MapPin className="w-4 h-4 text-primary" /> {tQuote("from")}
         </label>
-        <select required className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none cursor-pointer">
-          <option value="" disabled selected>{tQuote("placeholder_city")}</option>
+        <select 
+          name="from"
+          required 
+          value={formData.from}
+          onChange={handleChange}
+          className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none cursor-pointer"
+        >
+          <option value="" disabled>{tQuote("placeholder_city")}</option>
           {cities.map((city) => (
             <option key={city} value={city}>{city}</option>
           ))}
@@ -64,8 +83,14 @@ export function QuoteForm({ cities }: QuoteFormProps) {
         <label className="text-sm font-medium text-foreground flex items-center gap-2">
           <MapPin className="w-4 h-4 text-gold-500" /> {tQuote("to")}
         </label>
-        <select required className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none cursor-pointer">
-          <option value="" disabled selected>{tQuote("placeholder_city")}</option>
+        <select 
+          name="to"
+          required 
+          value={formData.to}
+          onChange={handleChange}
+          className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none cursor-pointer"
+        >
+          <option value="" disabled>{tQuote("placeholder_city")}</option>
           {cities.map((city) => (
             <option key={city} value={city}>{city}</option>
           ))}
@@ -77,7 +102,13 @@ export function QuoteForm({ cities }: QuoteFormProps) {
           <label className="text-sm font-medium text-foreground flex items-center gap-2">
             <Package className="w-4 h-4 text-muted-foreground" /> {tQuote("rooms")}
           </label>
-          <select required className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
+          <select 
+            name="rooms"
+            required 
+            value={formData.rooms}
+            onChange={handleChange}
+            className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+          >
             <option>1+1</option>
             <option>2+1</option>
             <option>3+1</option>
@@ -89,8 +120,11 @@ export function QuoteForm({ cities }: QuoteFormProps) {
             <Phone className="w-4 h-4 text-muted-foreground" /> {tQuote("phone")}
           </label>
           <input 
+            name="phone"
             required
             type="tel" 
+            value={formData.phone}
+            onChange={handleChange}
             placeholder={tQuote("placeholder_phone")} 
             className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" 
           />
@@ -105,14 +139,17 @@ export function QuoteForm({ cities }: QuoteFormProps) {
         {isSubmitting ? (
           <>
             <Loader2 className="w-5 h-5 animate-spin" />
-            Gönderiliyor...
+            Yönlendiriliyor...
           </>
         ) : (
-          tQuote("submit")
+          <>
+            <Send className="w-4 h-4" />
+            {tQuote("submit")}
+          </>
         )}
       </Button>
       <p className="text-xs text-center text-muted-foreground mt-3">
-        {tQuote("privacy_note")}
+        Teklifiniz anında WhatsApp üzerinden bize ulaşacaktır.
       </p>
     </form>
   );

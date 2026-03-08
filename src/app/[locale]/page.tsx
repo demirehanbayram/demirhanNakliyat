@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
-import { ShieldCheck, Truck, Clock, CheckCircle2, MapPin, Package, Phone, Star, ArrowRight } from "lucide-react";
+import { ShieldCheck, Truck, Clock, CheckCircle2, Star, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { QuoteForm } from "@/components/forms/QuoteForm";
 import { HeroSlider } from "@/components/layout/HeroSlider";

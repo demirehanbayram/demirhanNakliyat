@@ -2,7 +2,7 @@ import Script from "next/script";
 
 declare global {
   interface Window {
-    gtag: (type: string, action: string, data?: any) => void;
+    gtag: (type: string, action: string, data?: Record<string, unknown>) => void;
   }
 }
 

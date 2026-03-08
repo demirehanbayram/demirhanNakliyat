@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { MapPin, Package, Phone, CheckCircle2, Loader2, Send } from "lucide-react";
+import { MapPin, Package, Phone, Loader2, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 
@@ -41,21 +41,17 @@ export function QuoteForm({ cities }: QuoteFormProps) {
     // 1. WhatsApp Redirect
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
-    // 2. Email Client Open (mailto)
-    const emailSubject = encodeURIComponent("Yeni Nakliye Teklif Talebi");
-    const emailBody = encodeURIComponent(message.replace(/\*/g, "")); // Strip asterisks for email
-    const mailtoUrl = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
+    // 2. Email Client Open (mailto) - Defined for future use or can be triggered together
+    // const emailSubject = encodeURIComponent("Yeni Nakliye Teklif Talebi");
+    // const emailBody = encodeURIComponent(message.replace(/\*/g, "")); 
+    // const mailtoUrl = `mailto:${emailAddress}?subject=${emailSubject}&body=${emailBody}`;
 
     // Small delay for UI feel
     await new Promise(resolve => setTimeout(resolve, 800));
 
-    // Choose primary method (WhatsApp is usually better for instant lead response)
-    // We will open WhatsApp and also provide a simple fallback or secondary action if needed.
+    // Choose primary method (WhatsApp)
     window.open(whatsappUrl, '_blank');
     
-    // Optionally also open email after a short delay or if WhatsApp fails
-    // window.location.href = mailtoUrl;
-
     setIsSubmitting(false);
   };
 

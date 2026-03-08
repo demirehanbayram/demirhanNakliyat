@@ -27,7 +27,11 @@
     "office": "Ofis Taşıma",
     "international": "Uluslararası Lojistik",
     "storage": "Depolama Hizmetleri",
-    "details": "Detaylar"
+    "details": "Detaylar",
+    "home_desc": "Eşyalarınızı en yüksek özenle paketliyor ve yeni evinize güvenle ulaştırıyoruz.",
+    "office_desc": "İş akışınızı bozmadan, ofis mobilyalarınızı ve elektroniklerinizi profesyonelce taşıyoruz.",
+    "inter_desc": "Sınır tanımayan lojistik ağımızla eşyalarınızı dünyanın her yerine ulaştırıyoruz.",
+    "storage_desc": "Modern ve güvenli depolarımızda eşyalarınızı dilediğiniz süre boyunca muhafaza ediyoruz."
   },
   "Quote": {
     "title": "Hızlı Fiyat Teklifi Alın",
@@ -46,7 +50,15 @@
   },
   "Testimonials": {
     "title": "Müşteri Yorumları",
-    "subtitle": "Noter onaylı farkımızı deneyimleyen müşterilerimizin geri bildirimleri."
+    "subtitle": "Noter onaylı farkımızı deneyimleyen müşterilerimizin geri bildirimleri.",
+    "list": [
+      { "name": "Ahmet Y.", "comment": "Noter onaylı olması bana büyük güven verdi. Eşyalarım çok hızlı taşındı.", "rating": 5 },
+      { "name": "Ayşe K.", "comment": "Tam söyledikleri saatte geldiler, paketleme çok profesyoneldi.", "rating": 5 },
+      { "name": "Mehmet D.", "comment": "Ofis taşımacılığında Demirhan Nakliyat tek tercihim. Mükemmel hizmet.", "rating": 5 },
+      { "name": "Fatma S.", "comment": "Çok kibar ve işini iyi yapan bir ekip. Evden eve nakliyatta en iyisi.", "rating": 5 },
+      { "name": "Caner T.", "comment": "Sigortalı taşımacılık sözünü gerçekten tutuyorlar. Gönül rahatlığıyla tercih edebilirsiniz.", "rating": 5 },
+      { "name": "Zeynep B.", "comment": "Almanya'ya taşınırken uluslararası lojistik süreçlerini sorunsuz yönettiler.", "rating": 5 }
+    ]
   },
   "About": {
     "title": "Hakkımızda",

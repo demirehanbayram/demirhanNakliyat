@@ -27,7 +27,11 @@
     "office": "Büroumzug",
     "international": "Internationale Logistik",
     "storage": "Lagerdienstleistungen",
-    "details": "Details"
+    "details": "Details",
+    "home_desc": "Wir verpacken Ihr Hab und Gut mit größter Sorgfalt und liefern es sicher an Ihr neues Zuhause.",
+    "office_desc": "Wir ziehen Ihre Büromöbel und Elektronik professionell um, ohne Ihren Arbeitsablauf zu stören.",
+    "inter_desc": "Mit unserem grenzenlosen Logistiknetzwerk liefern wir Ihr Hab und Gut überall auf der Welt aus.",
+    "storage_desc": "In unseren modernen und sicheren Lagern bewahren wir Ihr Hab und Gut so lange auf, wie Sie es wünschen."
   },
   "Quote": {
     "title": "Holen Sie sich ein schnelles Angebot",
@@ -46,7 +50,15 @@
   },
   "Testimonials": {
     "title": "Kundenbewertungen",
-    "subtitle": "Feedback von unseren Kunden, die unseren notariell beglaubigten Unterschied erlebt haben."
+    "subtitle": "Feedback von unseren Kunden, die unseren notariell beglaubigten Unterschied erlebt haben.",
+    "list": [
+      { "name": "Ahmet Y.", "comment": "Die notarielle Beglaubigung gab mir großes Vertrauen. Meine Sachen wurden sehr schnell transportiert.", "rating": 5 },
+      { "name": "Ayşe K.", "comment": "Sie kamen genau zur angegebenen Zeit, die Verpackung war sehr professionell.", "rating": 5 },
+      { "name": "Mehmet D.", "comment": "Demirhan Nakliyat ist meine einzige Wahl beim Büroumzug. Exzellenter Service.", "rating": 5 },
+      { "name": "Fatma S.", "comment": "Ein sehr höfliches und kompetentes Team. Das Beste im Bereich Haus-zu-Haus-Umzug.", "rating": 5 },
+      { "name": "Caner T.", "comment": "Sie halten wirklich ihr Versprechen einer versicherten Beförderung. Sie können sie unbesorgt wählen.", "rating": 5 },
+      { "name": "Zeynep B.", "comment": "Beim Umzug nach Deutschland haben sie die internationalen Logistikprozesse reibungslos gemanagt.", "rating": 5 }
+    ]
   },
   "About": {
     "title": "Über uns",

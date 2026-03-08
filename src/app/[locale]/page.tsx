@@ -17,14 +17,6 @@ export default function HomePage() {
     tServices("storage")
   ];
 
-  const testimonials = [
-    { name: "Ahmet Y.", comment: "Noter onaylı olması bana büyük güven verdi. Eşyalarım çok hızlı taşındı.", rating: 5 },
-    { name: "Ayşe K.", comment: "Tam söyledikleri saatte geldiler, paketleme çok profesyoneldi.", rating: 5 },
-    { name: "Mehmet D.", comment: "Ofis taşımacılığında Demirhan Nakliyat tek tercihim. Mükemmel hizmet.", rating: 5 },
-    { name: "Fatma S.", comment: "Çok kibar ve işini iyi yapan bir ekip. Evden eve nakliyatta en iyisi.", rating: 5 },
-    { name: "Caner T.", comment: "Sigortalı taşımacılık sözünü gerçekten tutuyorlar. Gönül rahatlığıyla tercih edebilirsiniz.", rating: 5 },
-    { name: "Zeynep B.", comment: "Almanya'ya taşınırken uluslararası lojistik süreçlerini sorunsuz yönettiler.", rating: 5 },
-  ];
 
   return (
     <div className="flex flex-col min-h-[calc(100vh-4rem)]">
@@ -115,7 +107,7 @@ export default function HomePage() {
         {/* CSS Marquee implementation */}
         <div className="flex w-full overflow-hidden">
           <div className="flex gap-6 animate-marquee shrink-0 pr-6">
-            {testimonials.map((testi, i) => (
+            {(tTesti.raw("list") as any[]).map((testi, i) => (
               <div key={i} className="w-[350px] bg-card border border-border/50 rounded-2xl p-6 shadow-sm shrink-0">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(testi.rating)].map((_, j) => (
@@ -129,7 +121,7 @@ export default function HomePage() {
           </div>
           {/* Duplicate set for infinite scroll effect */}
           <div className="flex gap-6 animate-marquee shrink-0 pr-6">
-            {testimonials.map((testi, i) => (
+            {(tTesti.raw("list") as any[]).map((testi, i) => (
               <div key={`dup-${i}`} className="w-[350px] bg-card border border-border/50 rounded-2xl p-6 shadow-sm shrink-0">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(testi.rating)].map((_, j) => (

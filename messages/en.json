@@ -27,7 +27,11 @@
     "office": "Office Relocation",
     "international": "International Logistics",
     "storage": "Storage Services",
-    "details": "Details"
+    "details": "Details",
+    "home_desc": "We pack your belongings with the highest care and safely deliver them to your new home.",
+    "office_desc": "We professionally move your office furniture and electronics without disrupting your work flow.",
+    "inter_desc": "We deliver your belongings everywhere in the world with our limitless logistics network.",
+    "storage_desc": "We store your belongings for as long as you wish in our modern and secure warehouses."
   },
   "Quote": {
     "title": "Get a Quick Quote",
@@ -46,7 +50,15 @@
   },
   "Testimonials": {
     "title": "Customer Reviews",
-    "subtitle": "Feedback from our customers who experienced our notary-approved difference."
+    "subtitle": "Feedback from our customers who experienced our notary-approved difference.",
+    "list": [
+      { "name": "Ahmet Y.", "comment": "Being notary approved gave me great confidence. My belongings were moved very quickly.", "rating": 5 },
+      { "name": "Ayşe K.", "comment": "They arrived exactly at the time they said, the packaging was very professional.", "rating": 5 },
+      { "name": "Mehmet D.", "comment": "Demirhan Nakliyat is my only choice in office transportation. Excellent service.", "rating": 5 },
+      { "name": "Fatma S.", "comment": "A very polite and competent team. The best in home-to-home moving.", "rating": 5 },
+      { "name": "Caner T.", "comment": "They really keep their promise of insured transportation. You can choose them with peace of mind.", "rating": 5 },
+      { "name": "Zeynep B.", "comment": "While moving to Germany, they managed the international logistics processes smoothly.", "rating": 5 }
+    ]
   },
   "About": {
     "title": "About Us",

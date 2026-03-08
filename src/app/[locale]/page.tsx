@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import { ShieldCheck, Truck, Clock, CheckCircle2, MapPin, Package, Phone, Star, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { QuoteForm } from "@/components/forms/QuoteForm";
 
 export default function HomePage() {
   const tHero = useTranslations("Hero");
@@ -200,59 +201,8 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Minimal Demo Form Input structure */}
-              <div className="bg-background rounded-2xl p-6 border border-border/60 shadow-sm space-y-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-primary" /> {tQuote("from")}
-                  </label>
-                  <select className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none cursor-pointer">
-                    <option value="" disabled selected>{tQuote("placeholder_city")}</option>
-                    {cities.map((city) => (
-                      <option key={city} value={city}>{city}</option>
-                    ))}
-                  </select>
-                </div>
-                
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-gold-500" /> {tQuote("to")}
-                  </label>
-                  <select className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors appearance-none cursor-pointer">
-                    <option value="" disabled selected>{tQuote("placeholder_city")}</option>
-                    {cities.map((city) => (
-                      <option key={city} value={city}>{city}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground flex items-center gap-2">
-                      <Package className="w-4 h-4 text-muted-foreground" /> {tQuote("rooms")}
-                    </label>
-                    <select className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors">
-                      <option>1+1</option>
-                      <option>2+1</option>
-                      <option>3+1</option>
-                      <option>4+1 ve üzeri</option>
-                    </select>
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground flex items-center gap-2">
-                      <Phone className="w-4 h-4 text-muted-foreground" /> {tQuote("phone")}
-                    </label>
-                    <input type="tel" placeholder={tQuote("placeholder_phone")} className="w-full h-11 px-4 rounded-lg border border-border bg-background focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors" />
-                  </div>
-                </div>
-
-                <Button className="w-full h-12 mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-xl text-md">
-                  {tQuote("submit")}
-                </Button>
-                <p className="text-xs text-center text-muted-foreground mt-3">
-                  {tQuote("privacy_note")}
-                </p>
-              </div>
+              {/* Render QuoteForm Client Component */}
+              <QuoteForm cities={cities} />
             </div>
 
           </div>

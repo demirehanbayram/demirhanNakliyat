@@ -10,6 +10,12 @@ export default function HomePage() {
   const tQuote = useTranslations("Quote");
   const tTesti = useTranslations("Testimonials");
 
+  interface Testimonial {
+    name: string;
+    comment: string;
+    rating: number;
+  }
+
   const services = [
     tServices("home"),
     tServices("office"),
@@ -107,7 +113,7 @@ export default function HomePage() {
         {/* CSS Marquee implementation */}
         <div className="flex w-full overflow-hidden">
           <div className="flex gap-6 animate-marquee shrink-0 pr-6">
-            {(tTesti.raw("list") as any[]).map((testi, i) => (
+            {(tTesti.raw("list") as Testimonial[]).map((testi, i) => (
               <div key={i} className="w-[350px] bg-card border border-border/50 rounded-2xl p-6 shadow-sm shrink-0">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(testi.rating)].map((_, j) => (
@@ -121,7 +127,7 @@ export default function HomePage() {
           </div>
           {/* Duplicate set for infinite scroll effect */}
           <div className="flex gap-6 animate-marquee shrink-0 pr-6">
-            {(tTesti.raw("list") as any[]).map((testi, i) => (
+            {(tTesti.raw("list") as Testimonial[]).map((testi, i) => (
               <div key={`dup-${i}`} className="w-[350px] bg-card border border-border/50 rounded-2xl p-6 shadow-sm shrink-0">
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(testi.rating)].map((_, j) => (

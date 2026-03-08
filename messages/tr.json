@@ -47,5 +47,28 @@
   "Testimonials": {
     "title": "Müşteri Yorumları",
     "subtitle": "Noter onaylı farkımızı deneyimleyen müşterilerimizin geri bildirimleri."
+  },
+  "About": {
+    "title": "Hakkımızda",
+    "heading": "Türkiye’de İlk Noter Onaylı Taşıma Hizmeti",
+    "p1": "Demirhan Nakliyat olarak müşterilerimize daha güvenli ve şeffaf bir hizmet sunabilmek için Türkiye’de ilk noter onaylı taşıma hizmeti uygulamasını sunan firmalardan biri olmanın gururunu yaşıyoruz.",
+    "p2": "İsteğe bağlı olarak hazırlanan noter onaylı sözleşme ile taşınma sürecine ait tüm detaylar resmi olarak kayıt altına alınır. Böylece hem müşterilerimizin hem de firmamızın hakları güvence altına alınır ve taşınma süreci tamamen güvenilir bir şekilde gerçekleştirilir.",
+    "p3": "Bu uygulama sayesinde müşterilerimiz, eşyalarının taşınma sürecinde daha fazla güven, şeffaflık ve profesyonellik deneyimi yaşar.",
+    "p4": "Güvenli taşınmanın adresi: Demirhan Nakliyat",
+    "why_choose_us": "Neden Bizi Tercih Etmelisiniz?",
+    "features": {
+      "f1_title": "Profesyonel ve Deneyimli Ekip",
+      "f1_desc": "Alanında deneyimli ekibimiz, eşyalarınızı özenle paketler ve güvenli bir şekilde yeni adresinize ulaştırır.",
+      "f2_title": "Güvenli ve Dikkatli Taşıma",
+      "f2_desc": "Tüm eşyalarınız taşıma sırasında çizilme, kırılma ve zarar görmeye karşı özenle korunur.",
+      "f3_title": "Zamanında Hizmet",
+      "f3_desc": "Belirlenen gün ve saatte adresinizde olarak taşınma sürecini planlı ve hızlı bir şekilde tamamlarız.",
+      "f4_title": "Noter Onaylı Sözleşme İmkânı",
+      "f4_desc": "İsteğe bağlı olarak noter onaylı sözleşme ile hem müşterilerimizin hem de firmamızın haklarını güvence altına alıyoruz.",
+      "f5_title": "Uygun Fiyat Politikası",
+      "f5_desc": "Kaliteli hizmeti ulaşılabilir fiyatlarla sunarak müşterilerimizin memnuniyetini ön planda tutuyoruz.",
+      "f6_title": "Müşteri Memnuniyeti Odaklı Hizmet",
+      "f6_desc": "Taşınma sürecinin her aşamasında müşterilerimizin memnuniyeti bizim için en önemli önceliktir."
+    }
   }
 }

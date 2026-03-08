@@ -47,5 +47,28 @@
   "Testimonials": {
     "title": "Kundenbewertungen",
     "subtitle": "Feedback von unseren Kunden, die unseren notariell beglaubigten Unterschied erlebt haben."
+  },
+  "About": {
+    "title": "Über uns",
+    "heading": "Erster notariell beglaubigter Umzugsservice in der Türkei",
+    "p1": "Als Demirhan Nakliyat sind wir stolz darauf, eines der Unternehmen zu sein, das den ersten notariell beglaubigten Transportservice in der Türkei anbietet, um unseren Kunden einen sichereren und transparenteren Service zu bieten.",
+    "p2": "Mit dem optional erstellten notariell beglaubigten Vertrag werden alle Details des Umzugsprozesses offiziell protokolliert. So werden die Rechte sowohl unserer Kunden als auch unseres Unternehmens gesichert und der Umzugsprozess völlig zuverlässig durchgeführt.",
+    "p3": "Dank dieser Anwendung erleben unsere Kunden mehr Vertrauen, Transparenz und Professionalität während des Umzugsprozesses ihrer Habseligkeiten.",
+    "p4": "Die Adresse für sicheres Umziehen: Demirhan Nakliyat",
+    "why_choose_us": "Warum Sie uns wählen sollten?",
+    "features": {
+      "f1_title": "Professionelles und erfahrenes Team",
+      "f1_desc": "Unser erfahrenes Team verpackt Ihr Hab und Gut sorgfältig und liefert es sicher an Ihre neue Adresse.",
+      "f2_title": "Sicherer und sorgfältiger Transport",
+      "f2_desc": "Alle Ihre Gegenstände werden während des Transports sorgfältig vor Kratzern, Bruch und Beschädigungen geschützt.",
+      "f3_title": "Pünktlicher Service",
+      "f3_desc": "Indem wir zum vereinbarten Datum und Zeitpunkt bei Ihnen eintreffen, schließen wir den Umzugsprozess planmäßig und schnell ab.",
+      "f4_title": "Optional notariell beglaubigter Vertrag",
+      "f4_desc": "Auf Wunsch sichern wir die Rechte unserer Kunden und unseres Unternehmens mit einem notariell beglaubigten Vertrag ab.",
+      "f5_title": "Erschwingliche Preispolitik",
+      "f5_desc": "Indem wir qualitativ hochwertigen Service zu erschwinglichen Preisen anbieten, stellen wir die Zufriedenheit unserer Kunden in den Vordergrund.",
+      "f6_title": "Kundenzufriedenheitsorientierter Service",
+      "f6_desc": "In jeder Phase des Umzugsprozesses hat die Zufriedenheit unserer Kunden unsere höchste Priorität."
+    }
   }
 }

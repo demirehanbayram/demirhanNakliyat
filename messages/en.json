@@ -47,5 +47,28 @@
   "Testimonials": {
     "title": "Customer Reviews",
     "subtitle": "Feedback from our customers who experienced our notary-approved difference."
+  },
+  "About": {
+    "title": "About Us",
+    "heading": "Turkey's First Notary Approved Transportation Service",
+    "p1": "As Demirhan Nakliyat, we are proud to be one of the companies offering the first notary-approved transportation service in Turkey to provide our customers with a safer and more transparent service.",
+    "p2": "With the optionally prepared notary-approved contract, all details belonging to the moving process are officially recorded. Thus, the rights of both our customers and our company are secured, and the moving process is carried out in a completely reliable manner.",
+    "p3": "Thanks to this application, our customers experience more trust, transparency, and professionalism during the moving process of their belongings.",
+    "p4": "The address of safe moving: Demirhan Nakliyat",
+    "why_choose_us": "Why Choose Us?",
+    "features": {
+      "f1_title": "Professional and Experienced Team",
+      "f1_desc": "Our experienced team carefully packs your belongings and safely delivers them to your new address.",
+      "f2_title": "Safe and Careful Transportation",
+      "f2_desc": "All your belongings are carefully protected against scratches, breakage, and damage during transport.",
+      "f3_title": "On-Time Service",
+      "f3_desc": "By being at your address on the specified day and time, we complete the moving process planned and fast.",
+      "f4_title": "Notary Approved Contract Option",
+      "f4_desc": "Optionally, we secure the rights of both our customers and our company with a notary-approved contract.",
+      "f5_title": "Affordable Price Policy",
+      "f5_desc": "By providing quality service at accessible prices, we prioritize the satisfaction of our customers.",
+      "f6_title": "Customer Satisfaction Oriented Service",
+      "f6_desc": "At every stage of the moving process, our customers' satisfaction is our most important priority."
+    }
   }
 }

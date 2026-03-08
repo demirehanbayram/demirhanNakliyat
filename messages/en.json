@@ -3,11 +3,49 @@
     "home": "Home",
     "services": "Services",
     "about": "About Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "quote": "Get Quote"
   },
   "Hero": {
-    "title": "Turkey's First and Only Notary Approved Moving Company",
-    "subtitle": "Your belongings are transported under Demirhan assurance, insured and notarized. You just need to enjoy the renewal.",
-    "cta": "Get a Fast Quote"
+    "title": "Turkey's First and Only Notary Approved Shipping Company",
+    "subtitle": "Your belongings are transported under the guarantee of Demirhan, fully insured and notary certified. Just enjoy your new place.",
+    "cta": "Get a Quick Quote",
+    "services_btn": "View Services"
+  },
+  "Trust": {
+    "notary_title": "Notary Approved Contract",
+    "notary_desc": "With Turkey's only notary certified transport document, all your rights are legally guaranteed.",
+    "fleet_title": "Large Vehicle Fleet",
+    "fleet_desc": "We are at your service with modern vehicles with lifts and steel cases suitable for all sizes of goods.",
+    "time_title": "On Time Delivery",
+    "time_desc": "We are at your door on the day and time we promised. Professional transfer process without delay."
+  },
+  "Services": {
+    "title": "Professional Moving Solutions",
+    "subtitle": "We perfectly meet all the transportation services you need with Demirhan quality.",
+    "home": "House Moving",
+    "office": "Office Relocation",
+    "international": "International Logistics",
+    "storage": "Storage Services",
+    "details": "Details"
+  },
+  "Quote": {
+    "title": "Get a Quick Quote",
+    "subtitle": "Specify where your belongings will be moved from and to, and we will instantly offer you the most suitable price and time plan.",
+    "feature_1": "Free Expertise",
+    "feature_2": "Insured Transport Guarantee",
+    "feature_3": "Professional Packaging",
+    "from": "From",
+    "to": "To",
+    "rooms": "Number of Rooms",
+    "phone": "Phone",
+    "submit": "Request Quote",
+    "privacy_note": "By submitting, you accept the KVKK and Privacy Policy.",
+    "placeholder_city": "Select City, District",
+    "placeholder_phone": "+90 ___ ___ __ __"
+  },
+  "Testimonials": {
+    "title": "Customer Reviews",
+    "subtitle": "Feedback from our customers who experienced our notary-approved difference."
   }
 }

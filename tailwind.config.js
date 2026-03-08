@@ -63,6 +63,15 @@ module.exports = {
         sans: ["var(--font-inter)"],
         outfit: ["var(--font-outfit)"],
       },
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 1.5rem))" },
+        },
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+      },
     },
   },
   plugins: [],

@@ -3,11 +3,49 @@
     "home": "Ana Sayfa",
     "services": "Hizmetlerimiz",
     "about": "Hakkımızda",
-    "contact": "İletişim"
+    "contact": "İletişim",
+    "quote": "Teklif Al"
   },
   "Hero": {
     "title": "Türkiye'nin İlk ve Tek Noter Onaylı Nakliye Firması",
     "subtitle": "Eşyalarınız Demirhan güvencesi ile sigortalı ve noter tasdikli olarak taşınır. Size sadece yeniliğin keyfini çıkarmak kalır.",
-    "cta": "Hızlı Teklif Al"
+    "cta": "Hızlı Teklif Al",
+    "services_btn": "Hizmetleri İncele"
+  },
+  "Trust": {
+    "notary_title": "Noter Onaylı Sözleşme",
+    "notary_desc": "Türkiye'de tek noter tasdikli taşıma belgesi ile tüm haklarınız yasal güvence altındadır.",
+    "fleet_title": "Geniş Araç Filosu",
+    "fleet_desc": "Her ebatta eşya ve yüke uygun, modern liftli ve çelik kasalı araçlarımızla hizmetinizdeyiz.",
+    "time_title": "Tam Zamanında",
+    "time_desc": "Size söz verdiğimiz gün ve saatte kapınızdayız. Gecikme olmadan profesyonel transfer süreci."
+  },
+  "Services": {
+    "title": "Profesyonel Nakliyat Çözümleri",
+    "subtitle": "Demirhan kalitesiyle ihtiyacınız olan tüm taşımacılık hizmetlerini eksiksiz karşılıyoruz.",
+    "home": "Evden Eve Nakliyat",
+    "office": "Ofis Taşıma",
+    "international": "Uluslararası Lojistik",
+    "storage": "Depolama Hizmetleri",
+    "details": "Detaylar"
+  },
+  "Quote": {
+    "title": "Hızlı Fiyat Teklifi Alın",
+    "subtitle": "Eşyalarınızın nereden nereye taşınacağını belirtin, size en uygun fiyat ve zaman planını anında sunalım.",
+    "feature_1": "Ücretsiz Ekspertiz",
+    "feature_2": "Sigortalı Taşıma Garantisi",
+    "feature_3": "Profesyonel Paketleme",
+    "from": "Nereden",
+    "to": "Nereye",
+    "rooms": "Oda Sayısı",
+    "phone": "Telefon",
+    "submit": "Teklif İste",
+    "privacy_note": "Göndererek KVKK ve Gizlilik politikasını kabul etmiş sayılırsınız.",
+    "placeholder_city": "İl, İlçe seçin",
+    "placeholder_phone": "0(555) ___ __ __"
+  },
+  "Testimonials": {
+    "title": "Müşteri Yorumları",
+    "subtitle": "Noter onaylı farkımızı deneyimleyen müşterilerimizin geri bildirimleri."
   }
 }

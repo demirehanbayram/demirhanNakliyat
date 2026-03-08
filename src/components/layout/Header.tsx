@@ -41,7 +41,7 @@ export function Header() {
           <LanguageSwitcher />
           <ThemeToggle />
           <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
-            Teklif Al
+            {t("quote")}
           </Button>
         </div>
         

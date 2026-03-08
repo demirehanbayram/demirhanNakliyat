@@ -1,13 +1,51 @@
 {
   "Navigation": {
     "home": "Startseite",
-    "services": "Dienstleistungen",
+    "services": "Leistungen",
     "about": "Über uns",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "quote": "Angebot"
   },
   "Hero": {
-    "title": "Die erste und einzige notariell beglaubigte Umzugsfirma der Türkei",
-    "subtitle": "Ihr Hab und Gut wird unter der Demirhan-Garantie, versichert und notariell beglaubigt transportiert. Sie müssen nur noch die Erneuerung genießen.",
-    "cta": "Schnelles Angebot einholen"
+    "title": "Die erste und einzige notariell beglaubigte Spedition in der Türkei",
+    "subtitle": "Ihr Hab und Gut wird unter der Garantie von Demirhan versichert und notariell zertifiziert transportiert.",
+    "cta": "Schnelles Angebot einholen",
+    "services_btn": "Dienstleistungen ansehen"
+  },
+  "Trust": {
+    "notary_title": "Notariell beglaubigter Vertrag",
+    "notary_desc": "Mit dem einzigen notariell beglaubigten Transportdokument der Türkei werden all Ihre Rechte rechtlich garantiert.",
+    "fleet_title": "Großer Fuhrpark",
+    "fleet_desc": "Wir stehen Ihnen mit modernen Fahrzeugen mit Hebebühne und Stahlkoffer zur Verfügung, die für alle Größen von Gütern geeignet sind.",
+    "time_title": "Pünktliche Lieferung",
+    "time_desc": "Wir sind an dem Tag und zu der Zeit an Ihrer Tür, an dem wir es versprochen haben. Professioneller Transfer ohne Verzögerung."
+  },
+  "Services": {
+    "title": "Professionelle Umzugslösungen",
+    "subtitle": "Mit der Qualität von Demirhan erfüllen wir alle von Ihnen benötigten Transportdienstleistungen perfekt.",
+    "home": "Umzug von Haus zu Haus",
+    "office": "Büroumzug",
+    "international": "Internationale Logistik",
+    "storage": "Lagerdienstleistungen",
+    "details": "Details"
+  },
+  "Quote": {
+    "title": "Holen Sie sich ein schnelles Angebot",
+    "subtitle": "Geben Sie an, woher und wohin Ihre Sachen transportiert werden sollen, und wir bieten Ihnen sofort den passendsten Preis und Zeitplan.",
+    "feature_1": "Kostenloses Gutachten",
+    "feature_2": "Versicherte Transportgarantie",
+    "feature_3": "Professionelle Verpackung",
+    "from": "Von",
+    "to": "Nach",
+    "rooms": "Anzahl der Zimmer",
+    "phone": "Telefon",
+    "submit": "Angebot anfordern",
+    "privacy_note": "Mit dem Absenden akzeptieren Sie die Datenschutzrichtlinie und KVKK.",
+    "placeholder_city": "Stadt, Bezirk auswählen",
+    "placeholder_phone": "+90 ___ ___ __ __"
+  },
+  "Testimonials": {
+    "title": "Kundenbewertungen",
+    "subtitle": "Feedback von unseren Kunden, die unseren notariell beglaubigten Unterschied erlebt haben."
   }
 }

@@ -61,7 +61,7 @@ export function HeroSlider() {
           
           {/* Brand Watermark */}
           <div className="absolute top-8 left-8 bg-primary/90 text-primary-foreground px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-xl border border-white/10">
-            Demirhan Nakliyat
+            DEMİRHAN NAKLİYAT
           </div>
 
           {/* Slide Content */}

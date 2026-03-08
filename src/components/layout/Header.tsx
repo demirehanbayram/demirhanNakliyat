@@ -14,8 +14,8 @@ export function Header() {
         {/* Logo Section */}
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-outfit text-xl font-bold tracking-tight text-primary">
-              Demirhan<span className="text-gold-500">Nakliyat</span>
+            <span className="font-outfit text-xl font-bold tracking-tighter text-primary uppercase">
+              Demirhan <span className="text-gold-500">Nakliyat</span>
             </span>
           </Link>
         </div>

@@ -40,9 +40,11 @@ export function Header() {
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <ThemeToggle />
-          <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
-            {t("quote")}
-          </Button>
+          <Link href="/#quote">
+            <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-6">
+              {t("quote")}
+            </Button>
+          </Link>
         </div>
         
       </div>

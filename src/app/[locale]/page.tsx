@@ -1,7 +1,8 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
-import { ShieldCheck, Truck, Clock, CheckCircle2, MapPin, Package, Phone, Star } from "lucide-react";
+import { ShieldCheck, Truck, Clock, CheckCircle2, MapPin, Package, Phone, Star, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function HomePage() {
   const tHero = useTranslations("Hero");
@@ -17,10 +18,10 @@ export default function HomePage() {
   }
 
   const services = [
-    tServices("home"),
-    tServices("office"),
-    tServices("international"),
-    tServices("storage")
+    { name: tServices("home"), href: "/services/home-moving", image: "/images/services/home-moving.png" },
+    { name: tServices("office"), href: "/services/office-moving", image: "/images/services/office-moving.png" },
+    { name: tServices("international"), href: "/services/international", image: "/images/services/international.png" },
+    { name: tServices("storage"), href: "/services/storage", image: "/images/services/storage.png" }
   ];
 
 
@@ -30,22 +31,38 @@ export default function HomePage() {
       {/* 1. Hero Section */}
       <section className="relative overflow-hidden bg-background pt-16 md:pt-24 lg:pt-32 pb-16">
         <div className="absolute inset-0 bg-gold-500/5 dark:bg-primary/10 -z-10" />
-        <div className="container max-w-7xl mx-auto px-4 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-foreground font-outfit max-w-4xl mx-auto leading-tight">
-            {tHero("title")}
-          </h1>
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            {tHero("subtitle")}
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="h-14 px-8 text-base rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all w-full sm:w-auto">
-              {tHero("cta")}
-            </Button>
-            <Link href="/services">
-              <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-border hover:bg-muted w-full sm:w-auto">
-                {tHero("services_btn")}
-              </Button>
-            </Link>
+        <div className="container max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-left">
+            <div>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-foreground font-outfit leading-tight">
+                {tHero("title")}
+              </h1>
+              <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+                {tHero("subtitle")}
+              </p>
+              <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                <Link href="#quote" className="w-full sm:w-auto">
+                  <Button size="lg" className="h-14 px-8 text-base rounded-full bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg shadow-primary/20 transition-all w-full sm:w-auto">
+                    {tHero("cta")}
+                  </Button>
+                </Link>
+                <Link href="/services">
+                  <Button size="lg" variant="outline" className="h-14 px-8 text-base rounded-full border-border hover:bg-muted w-full sm:w-auto">
+                    {tHero("services_btn")}
+                  </Button>
+                </Link>
+              </div>
+            </div>
+            <div className="relative aspect-[16/9] lg:aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-4 border-background">
+              <Image 
+                src="/images/hero.png" 
+                alt="Demirhan Nakliyat Hero" 
+                fill 
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+            </div>
           </div>
         </div>
       </section>
@@ -89,15 +106,28 @@ export default function HomePage() {
             <p className="text-muted-foreground">{tServices("subtitle")}</p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, i) => (
-              <div key={i} className="group flex items-start gap-4 p-5 rounded-xl border border-border/60 hover:border-primary/50 hover:shadow-md transition-all cursor-pointer bg-card">
-                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors">{service}</h4>
-                  <Link href="/services" className="text-sm text-muted-foreground mt-2 inline-block hover:underline">{tServices("details")} &rarr;</Link>
+              <Link key={i} href={service.href} className="group">
+                <div className="relative overflow-hidden rounded-2xl border border-border/60 bg-card hover:border-primary/50 hover:shadow-xl transition-all h-full">
+                  <div className="relative h-48 overflow-hidden">
+                    <Image 
+                      src={service.image} 
+                      alt={service.name} 
+                      fill 
+                      className="object-cover group-hover:scale-110 transition-transform duration-500" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="font-bold text-lg text-foreground group-hover:text-primary transition-colors">{service.name}</h4>
+                      <ArrowRight className="w-5 h-5 text-primary opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all" />
+                    </div>
+                    <span className="text-sm text-muted-foreground font-medium">{tServices("details")}</span>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -144,7 +174,7 @@ export default function HomePage() {
       </section>
 
       {/* 4. Quick Quote CTA Form Container */}
-      <section className="py-20 bg-primary/5 border-t border-border/40 relative">
+      <section id="quote" className="py-20 bg-primary/5 border-t border-border/40 relative">
         <div className="container max-w-5xl mx-auto px-4 lg:px-8">
           <div className="bg-card rounded-3xl p-8 lg:p-12 border border-border/50 shadow-xl overflow-hidden relative z-10">
             <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl -z-10 -translate-y-1/2 translate-x-1/3"></div>

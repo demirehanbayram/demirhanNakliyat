@@ -1,11 +1,9 @@
-import { useTranslations } from "next-intl";
-import { ShieldCheck, Truck, PackageCheck, Zap, UserCheck, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ServiceDetailProps {
   title: string;
   description: string;
-  features: { title: string; desc: string; icon: any }[];
+  features: { title: string; desc: string; icon: React.ReactNode }[];
   process: { step: string; title: string; desc: string }[];
 }
 

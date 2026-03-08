@@ -1,7 +1,7 @@
 "use client";
 
 import ServiceDetailLayout from "@/components/layout/ServiceDetailLayout";
-import { ShieldCheck, Truck, PackageCheck, Zap, UserCheck, Clock } from "lucide-react";
+import { ShieldCheck, PackageCheck, Zap } from "lucide-react";
 
 export default function HomeMovingPage() {
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import ServiceDetailLayout from "@/components/layout/ServiceDetailLayout";
-import { Warehouse, ShieldCheck, Thermometer, Video, Lock, Key } from "lucide-react";
+import { Thermometer, Video, Key } from "lucide-react";
 
 export default function StoragePage() {
   return (

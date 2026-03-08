@@ -1,7 +1,7 @@
 "use client";
 
 import ServiceDetailLayout from "@/components/layout/ServiceDetailLayout";
-import { Globe2, Ship, Truck, FileCheck, Anchor, MapCheck } from "lucide-react";
+import { Ship, FileCheck, Anchor } from "lucide-react";
 
 export default function InternationalMovingPage() {
   return (

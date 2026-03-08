@@ -1,7 +1,7 @@
 "use client";
 
 import ServiceDetailLayout from "@/components/layout/ServiceDetailLayout";
-import { ShieldCheck, Building2, Server, Globe2, Briefcase, Clock } from "lucide-react";
+import { Server, Briefcase, Clock } from "lucide-react";
 
 export default function OfficeMovingPage() {
   return (

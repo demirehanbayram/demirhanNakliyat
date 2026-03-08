@@ -8,6 +8,7 @@ export default function InternationalMovingPage() {
     <ServiceDetailLayout
       title="Uluslararası Nakliyat"
       description="Sınırları aşan lojistik ağımız ve uzman gümrükleme kadromuzla eşyalarınızı Türkiye'den dünyanın her yerine güvenle ulaştırıyoruz."
+      imageSrc="/images/services/international.png"
       features={[
         {
           title: "Uluslararası Sigorta",

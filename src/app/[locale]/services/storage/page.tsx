@@ -8,6 +8,7 @@ export default function StoragePage() {
     <ServiceDetailLayout
       title="Akıllı ve Güvenli Depolama"
       description="Eşyalarınız için nem, ısı ve güvenlik kontrolü sağlanan modern depolarımızda kişiye özel oda çözümleri sunuyoruz."
+      imageSrc="/images/services/storage.png"
       features={[
         {
           title: "7/24 Kesintisiz Güvenlik",

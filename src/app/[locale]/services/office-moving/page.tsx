@@ -8,6 +8,7 @@ export default function OfficeMovingPage() {
     <ServiceDetailLayout
       title="Ofis ve Kurumsal Taşıma"
       description="İş akışınızın kesintisiz devam etmesi için ofis mobilyalarınızı, IT altyapınızı ve önemli dökümanlarınızı kurumsal standartlarımızla taşıyoruz."
+      imageSrc="/images/services/office-moving.png"
       features={[
         {
           title: "Hızlı Yerleşim Garantisi",

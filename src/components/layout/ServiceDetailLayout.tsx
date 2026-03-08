@@ -1,34 +1,54 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface ServiceDetailProps {
   title: string;
   description: string;
+  imageSrc: string;
   features: { title: string; desc: string; icon: React.ReactNode }[];
   process: { step: string; title: string; desc: string }[];
 }
 
-export default function ServiceDetailLayout({ title, description, features, process }: ServiceDetailProps) {
+export default function ServiceDetailLayout({ title, description, imageSrc, features, process }: ServiceDetailProps) {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
       <section className="relative overflow-hidden bg-background pt-24 pb-20 border-b border-border/40">
         <div className="absolute inset-0 bg-primary/5 -z-10" />
-        <div className="container max-w-5xl mx-auto px-4 text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-6xl font-bold font-outfit mb-6 text-foreground"
-          >
-            {title}
-          </motion.h1>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
-          >
-            {description}
-          </motion.p>
+        <div className="container max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-left">
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-4xl md:text-6xl font-bold font-outfit mb-6 text-foreground"
+              >
+                {title}
+              </motion.h1>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="text-xl text-muted-foreground max-w-3xl leading-relaxed"
+              >
+                {description}
+              </motion.p>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+              className="relative aspect-[16/9] rounded-3xl overflow-hidden shadow-2xl border border-border/50"
+            >
+              <Image 
+                src={imageSrc} 
+                alt={title} 
+                fill 
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+            </motion.div>
+          </div>
         </div>
       </section>
 

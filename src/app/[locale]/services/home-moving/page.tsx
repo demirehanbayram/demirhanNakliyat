@@ -8,6 +8,7 @@ export default function HomeMovingPage() {
     <ServiceDetailLayout
       title="Evden Eve Nakliyat"
       description="Evinizdeki her bir eşyayı kendi eşyamız gibi benimsiyor, noter onaylı güvence ve profesyonel ambalajlama ile yeni yuvanıza taşıyoruz."
+      imageSrc="/images/services/home-moving.png"
       features={[
         {
           title: "Noter Onaylı Güvence",

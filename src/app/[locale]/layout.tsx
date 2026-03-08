@@ -86,8 +86,40 @@ export default async function RootLayout({
   // Arabic needs RTL direction
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "Demirhan Nakliyat",
+    "alternateName": "Demirhan Evden Eve Nakliye",
+    "url": "https://demirhannakliyat.com.tr",
+    "logo": "https://demirhannakliyat.com.tr/images/og-image.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+90-537-050-87-12",
+      "contactType": "customer service",
+      "areaServed": "TR",
+      "availableLanguage": ["Turkish", "English", "German", "Arabic"]
+    },
+    "sameAs": [
+      "https://www.instagram.com/demirhannakliyat",
+      "https://wa.me/905370508712"
+    ],
+    "description": "Türkiye'nin ilk ve tek noter onaylı nakliyat firması. Sigortalı, güvenli evden eve nakliyat.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Denizli",
+      "addressCountry": "TR"
+    }
+  };
+
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-background text-foreground`}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider

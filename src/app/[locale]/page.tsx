@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 import { ShieldCheck, Truck, Clock, CheckCircle2, MapPin, Package, Phone, Star, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { QuoteForm } from "@/components/forms/QuoteForm";
+import { HeroSlider } from "@/components/layout/HeroSlider";
 
 export default function HomePage() {
   const tHero = useTranslations("Hero");
@@ -58,15 +59,8 @@ export default function HomePage() {
                 </Link>
               </div>
             </div>
-            <div className="relative aspect-[16/9] lg:aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-4 border-background">
-              <Image 
-                src="/images/hero.png" 
-                alt="Demirhan Nakliyat Hero" 
-                fill 
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
+            <div className="relative aspect-[16/9] lg:aspect-square">
+              <HeroSlider />
             </div>
           </div>
         </div>

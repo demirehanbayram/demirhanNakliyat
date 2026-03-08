@@ -122,7 +122,7 @@ export default function HomePage() {
                     <Star key={j} className="w-4 h-4 fill-gold-500 text-gold-500" />
                   ))}
                 </div>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">"{testi.comment}"</p>
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">&quot;{testi.comment}&quot;</p>
                 <div className="font-semibold text-foreground text-sm">{testi.name}</div>
               </div>
             ))}
@@ -136,7 +136,7 @@ export default function HomePage() {
                     <Star key={j} className="w-4 h-4 fill-gold-500 text-gold-500" />
                   ))}
                 </div>
-                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">"{testi.comment}"</p>
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-3">&quot;{testi.comment}&quot;</p>
                 <div className="font-semibold text-foreground text-sm">{testi.name}</div>
               </div>
             ))}

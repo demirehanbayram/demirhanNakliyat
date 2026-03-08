@@ -69,6 +69,35 @@
       "f5_desc": "Indem wir qualitativ hochwertigen Service zu erschwinglichen Preisen anbieten, stellen wir die Zufriedenheit unserer Kunden in den Vordergrund.",
       "f6_title": "Kundenzufriedenheitsorientierter Service",
       "f6_desc": "In jeder Phase des Umzugsprozesses hat die Zufriedenheit unserer Kunden unsere höchste Priorität."
+    },
+    "Footer": {
+      "desc": "Türkeis erste und einzige notariell beglaubigte Spedition. Ihr Hab und Gut ist bei uns sicher.",
+      "links_title": "Hızlı Erişim",
+      "contact_title": "Kontakt",
+      "trust_title": "Güvence",
+      "notary_seal": "100% notariell beglaubigtes Transportzertifikat",
+      "rights": "Demirhan Nakliyat. Alle Rechte vorbehalten.",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen",
+      "tel": "Tel: +90 850 123 45 67",
+      "email": "info@demirhannakliyat.com",
+      "address": "Istanbul, Türkei"
+    },
+    "Contact": {
+      "title": "Kontakt",
+      "subtitle": "Kontaktieren Sie uns umgehend für alle Ihre Umzugsprozesse und Fragen.",
+      "office_title": "Demirhan Nakliyat Hauptsitz",
+      "phone_label": "Telefon",
+      "email_label": "E-Mail",
+      "address_label": "Adresse",
+      "address_val": "Kadiköy, Istanbul / Türkei",
+      "form_title": "Senden Sie eine Kurznachricht",
+      "form_name": "Dein Name",
+      "form_email": "Deine E-Mail",
+      "form_phone": "Deine Telefonnummer",
+      "form_message": "Deine Nachricht",
+      "form_submit": "Nachricht senden",
+      "success_msg": "Ihre Nachricht ist eingegangen, wir werden uns in Kürze bei Ihnen melden."
     }
   }
 }

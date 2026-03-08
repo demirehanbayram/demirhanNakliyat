@@ -69,6 +69,35 @@
       "f5_desc": "By providing quality service at accessible prices, we prioritize the satisfaction of our customers.",
       "f6_title": "Customer Satisfaction Oriented Service",
       "f6_desc": "At every stage of the moving process, our customers' satisfaction is our most important priority."
+    },
+    "Footer": {
+      "desc": "Turkey's first and only notary approved shipping company. Your belongings are safe with us.",
+      "links_title": "Quick Access",
+      "contact_title": "Contact",
+      "trust_title": "Assurance",
+      "notary_seal": "100% Notary Approved Transportation Certificate",
+      "rights": "Demirhan Nakliyat. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "tel": "Tel: +90 850 123 45 67",
+      "email": "info@demirhannakliyat.com",
+      "address": "Istanbul, Turkey"
+    },
+    "Contact": {
+      "title": "Contact",
+      "subtitle": "Contact us immediately for all your moving processes and questions.",
+      "office_title": "Demirhan Nakliyat Head Office",
+      "phone_label": "Phone",
+      "email_label": "E-mail",
+      "address_label": "Address",
+      "address_val": "Kadikoy, Istanbul / Turkey",
+      "form_title": "Send a Quick Message",
+      "form_name": "Your Name",
+      "form_email": "Your E-mail",
+      "form_phone": "Your Phone Number",
+      "form_message": "Your Message",
+      "form_submit": "Send Message",
+      "success_msg": "Your message has been received, we will get back to you soon."
     }
   }
 }

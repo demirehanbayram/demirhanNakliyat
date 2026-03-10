@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
-import { Gavel, ClipboardCheck } from "lucide-react";
 
 export function Footer() {
   const tNav = useTranslations("Navigation");
@@ -54,26 +53,14 @@ export function Footer() {
         {/* Notary Seal & Free Survey */}
         <div>
           <h3 className="font-semibold text-foreground mb-4">{tFooter("trust_title")}</h3>
-          <div className="p-4 border border-gold-500/30 rounded-lg bg-gold-500/5 hover:bg-gold-500/10 transition-colors flex flex-col gap-4">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-gold-500/10 rounded-full">
-                <Gavel className="w-5 h-5 text-gold-600" />
-              </div>
-              <p className="text-sm font-semibold text-gold-500 leading-tight">
-                {tFooter("notary_seal")}
-              </p>
-            </div>
-            
+          <div className="p-4 border border-gold-500/30 rounded-lg bg-gold-500/5 hover:bg-gold-500/10 transition-colors flex flex-col gap-3">
+            <p className="text-sm font-semibold text-gold-500 text-center leading-tight">
+              {tFooter("notary_seal")}
+            </p>
             <div className="h-px bg-gold-500/20 w-full" />
-            
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-gold-500/10 rounded-full">
-                <ClipboardCheck className="w-5 h-5 text-gold-600" />
-              </div>
-              <p className="text-sm font-bold text-gold-600 uppercase tracking-wider">
-                {tFooter("free_survey")}
-              </p>
-            </div>
+            <p className="text-sm font-bold text-gold-600 text-center uppercase tracking-wider">
+              {tFooter("free_survey")}
+            </p>
           </div>
         </div>
 

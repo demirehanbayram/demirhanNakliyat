@@ -1,19 +1,38 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { MessageCircle, Instagram } from "lucide-react";
+import { MessageCircle, Instagram, Star } from "lucide-react";
 import { motion } from "framer-motion";
 
-export function WhatsAppButton() {
+export function FloatingContactButtons() {
   const t = useTranslations("Footer");
   const phoneNumber = "905370508712"; // Primary number
   const message = encodeURIComponent("Merhaba, nakliye hizmeti hakkında bilgi almak istiyorum.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
   const instagramUrl = "https://www.instagram.com/demirhannakliyat1?igsh=Ynd5OXloMGt0ZDNn";
+  const armutUrl = "https://armut.com/hizmetveren/demirhan-nakliyat-denizli-pamukkale-evden-eve-nakliyat_77506223";
 
   return (
     <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4 items-center">
       
+      {/* Armut Button */}
+      <motion.a
+        href={armutUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 0.2 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="flex items-center gap-3 bg-[#36B37E] text-white p-4 rounded-full shadow-2xl hover:shadow-[#36B37E]/40 transition-shadow group relative"
+      >
+        <div className="absolute right-full mr-4 bg-white text-black px-4 py-2 rounded-xl text-sm font-semibold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden md:block">
+          {t("armut")}
+        </div>
+        <Star className="w-7 h-7 fill-current" />
+      </motion.a>
+
       {/* Instagram Button */}
       <motion.a
         href={instagramUrl}

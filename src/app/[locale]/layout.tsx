@@ -8,7 +8,7 @@ import { routing, Locale } from '@/i18n/routing';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
-import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
+import { FloatingContactButtons } from '@/components/ui/FloatingContactButtons';
 import Analytics from '@/components/Analytics';
 
 const outfit = Outfit({
@@ -132,7 +132,7 @@ export default async function RootLayout({
               <Analytics />
               <Header />
               <main className="flex-1">{children}</main>
-              <WhatsAppButton />
+              <FloatingContactButtons />
               <Footer />
             </div>
           </ThemeProvider>

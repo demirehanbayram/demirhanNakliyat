@@ -50,12 +50,16 @@ export function Footer() {
           </ul>
         </div>
 
-        {/* Notary Seal */}
+        {/* Notary Seal & Free Survey */}
         <div>
           <h3 className="font-semibold text-foreground mb-4">{tFooter("trust_title")}</h3>
-          <div className="p-4 border border-gold-500/30 rounded-lg bg-gold-500/5 hover:bg-gold-500/10 transition-colors">
-            <p className="text-sm font-medium text-gold-500 text-center">
+          <div className="p-4 border border-gold-500/30 rounded-lg bg-gold-500/5 hover:bg-gold-500/10 transition-colors flex flex-col gap-3">
+            <p className="text-sm font-semibold text-gold-500 text-center leading-tight">
               {tFooter("notary_seal")}
+            </p>
+            <div className="h-px bg-gold-500/20 w-full" />
+            <p className="text-sm font-bold text-gold-600 text-center uppercase tracking-wider">
+              {tFooter("free_survey")}
             </p>
           </div>
         </div>

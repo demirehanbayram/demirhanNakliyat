@@ -27,7 +27,14 @@ export const metadata: Metadata = {
     template: "%s | Demirhan Nakliyat"
   },
   description: "Demirhan Nakliyat ile Türkiye çapında sigortalı, güvenli ve noter onaylı evden eve nakliyat, ofis taşıma ve depolama hizmetleri. Hemen ücretsiz teklif alın!",
-  keywords: ["nakliyat", "evden eve nakliyat", "noter onaylı nakliyat", "şehirler arası nakliyat", "ofis taşıma", "eşya depolama", "demirhan nakliyat"],
+  keywords: [
+    "nakliyat", "evden eve nakliyat", "noter onaylı nakliyat", "şehirler arası nakliyat", "ofis taşıma", "eşya depolama", "demirhan nakliyat",
+    "Denizli evden eve nakliyat", "Denizli şehir içi nakliyat", "Denizli şehirler arası taşımacılık", "Denizli asansörlü taşımacılık", 
+    "Denizli sigortalı nakliyat", "Denizli ucuz nakliyat", "Denizli ofis taşımacılığı", "Denizli parça eşya taşıma", 
+    "Denizli marangozlu taşımacılık", "Denizli profesyonel nakliyat", "Denizli ev taşıma firması", "Denizli taşınma hizmeti", 
+    "Merkezefendi evden eve nakliyat", "Pamukkale evden eve nakliyat", "Denizli taşımacılık firması", "Denizli güvenli taşımacılık", 
+    "Denizli ev taşıma fiyatları", "Denizli paketleme ve taşıma", "Denizli mobilya taşıma", "Denizli nakliyat yorumları"
+  ],
   authors: [{ name: "Demirhan Nakliyat" }],
   creator: "Demirhan Nakliyat",
   publisher: "Demirhan Nakliyat",

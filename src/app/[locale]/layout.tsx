@@ -33,7 +33,16 @@ export const metadata: Metadata = {
     "Denizli sigortalı nakliyat", "Denizli ucuz nakliyat", "Denizli ofis taşımacılığı", "Denizli parça eşya taşıma", 
     "Denizli marangozlu taşımacılık", "Denizli profesyonel nakliyat", "Denizli ev taşıma firması", "Denizli taşınma hizmeti", 
     "Merkezefendi evden eve nakliyat", "Pamukkale evden eve nakliyat", "Denizli taşımacılık firması", "Denizli güvenli taşımacılık", 
-    "Denizli ev taşıma fiyatları", "Denizli paketleme ve taşıma", "Denizli mobilya taşıma", "Denizli nakliyat yorumları"
+    "Denizli ev taşıma fiyatları", "Denizli paketleme ve taşıma", "Denizli mobilya taşıma", "Denizli nakliyat yorumları",
+    "Denizli hızlı taşımacılık", "Denizli paketli taşımacılık", "Denizli taşımacılık garantili", "Denizli ev taşıma uzmanı",
+    "Denizli nakliyat hizmetleri", "Denizli taşınma firmaları", "Denizli şehir içi ev taşımacılığı", "Denizli profesyonel nakliyeciler",
+    "Denizli taşımacılık firmaları fiyat", "Denizli ev taşıma yorumları", "Denizli asansörlü ev taşıma", "Denizli ekonomik nakliyat",
+    "Denizli taşınma hizmetleri", "Denizli evden eve taşıma fiyatları", "Denizli şehirler arası ev taşımacılığı", "Denizli ofis taşıma fiyatları",
+    "Denizli nakliyat kampanya", "Denizli ev taşıma fırsatları", "Denizli taşımacılık tavsiye", "Denizli güvenilir nakliyat",
+    "Denizli profesyonel taşımacılık", "Denizli müşteri memnuniyeti", "Denizli hızlı nakliyat", "Denizli paketleme hizmeti",
+    "Denizli sigortalı taşımacılık", "Denizli ağır eşya taşıma", "Denizli elektronik eşya taşımacılığı", "Denizli piano taşıma",
+    "Denizli eşya depolama", "Pamukkale nakliyat firması", "Honaz ev taşımacılığı", "Acıpayam evden eve taşımacılık",
+    "Çivril taşımacılık hizmeti", "Denizli asansörlü nakliyat"
   ],
   authors: [{ name: "Demirhan Nakliyat" }],
   creator: "Demirhan Nakliyat",
